@@ -3,10 +3,10 @@
 1. Databinding
 2. String Interpolation
 3. Property Binding
-Property Binding vs String Interpolation
-Event Binding
-Bindable Properties and Events
-Passing and Using Data with Event Binding
+4. Property Binding vs String Interpolation
+5. Event Binding
+6. Bindable Properties and Events
+7. Passing and Using Data with Event Binding
 
 -----------------------------------------
 
