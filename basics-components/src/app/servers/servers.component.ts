@@ -11,9 +11,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-  allowNewServer = false;
-  serverCreationStatus = 'No server was created!';
-  serverName = 'TESTES';
+  allowNewServer = false; // propertty binding
+  serverCreationStatus = 'No server was created!'; // string interpolation
+  serverName = 'TESTES';  //  two way data binding
 
   constructor() {
     setTimeout(() => {
@@ -24,6 +24,7 @@ export class ServersComponent implements OnInit {
   ngOnInit() {
   }
 
+  // event binding
   onCreateServer() {
     this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
   }
