@@ -13,8 +13,9 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   allowNewServer = false; // propertty binding
   serverCreationStatus = 'No server was created!'; // string interpolation
-  serverName = 'TESTES';  //  two way data binding
+  serverName = 'Testserver';  //  two way data binding
   serverCreated = false;
+  servers = ['Testserver', 'Testserver 2'];
 
   constructor() {
     setTimeout(() => {
@@ -28,6 +29,7 @@ export class ServersComponent implements OnInit {
   // event binding
   onCreateServer() {
     this.serverCreated = true;
+    this.servers.push(this.serverName);
     this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
   }
 
@@ -35,5 +37,6 @@ export class ServersComponent implements OnInit {
     console.log(event);
     this.serverName = (<HTMLInputElement>event.target).value;
   }
+
 
 }
