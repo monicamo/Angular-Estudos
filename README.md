@@ -9,7 +9,8 @@
 7. Passing and Using Data with Event Binding
 8. Two Way Databinding
 9. Combinando todas as formas de databinding
-10. Usando ngIf to output data condicionalemnte
+10. Usando ngIf to output data condicionalmente
+11. Enhancing nfIf com a condicao Else 
 
 Entendendo Diretivas
 

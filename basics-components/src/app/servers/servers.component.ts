@@ -14,6 +14,7 @@ export class ServersComponent implements OnInit {
   allowNewServer = false; // propertty binding
   serverCreationStatus = 'No server was created!'; // string interpolation
   serverName = 'TESTES';  //  two way data binding
+  serverCreated = false;
 
   constructor() {
     setTimeout(() => {
@@ -26,6 +27,7 @@ export class ServersComponent implements OnInit {
 
   // event binding
   onCreateServer() {
+    this.serverCreated = true;
     this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
   }
 
