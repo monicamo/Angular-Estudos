@@ -7,6 +7,11 @@
 5. Event Binding
 6. Bindable Properties and Events
 7. Passing and Using Data with Event Binding
+8. Two Way Databinding
+9. Combinando todas as formas de databinding
+10. Usando ngIf to output data condicionalemnte
+
+Entendendo Diretivas
 
 -----------------------------------------
 
@@ -25,3 +30,6 @@ Important: For Two-Way-Binding (covered in the next lecture) to work, you need t
 You then also need to add the import from @angular/forms  in the app.module.ts file:
 
 import { FormsModule } from '@angular/forms'; 
+----------------------------------------------------------------
+
+Diretivas são instruções no DOM.
