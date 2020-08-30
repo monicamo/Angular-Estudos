@@ -10,7 +10,11 @@
 8. Two Way Databinding
 9. Combinando todas as formas de databinding
 10. Usando ngIf to output data condicionalmente
-11. Enhancing nfIf com a condicao Else 
+11. Enhancing ngIf com a condicao Else 
+12. Styling Eleemntos dinamicamente com ngStyle
+13. Aplicando classes CSS dinamicaemnte com ngClass
+
+
 
 Entendendo Diretivas
 
