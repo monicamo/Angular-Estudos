@@ -13,8 +13,8 @@
 11. Enhancing ngIf com a condicao Else 
 12. Styling Eleemntos dinamicamente com ngStyle
 13. Aplicando classes CSS dinamicaemnte com ngClass
-
-
+14. Saida de listas com ngFor
+15. Getting index quando usa o ngfor
 
 Entendendo Diretivas
 
