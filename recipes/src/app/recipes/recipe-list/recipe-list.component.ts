@@ -8,7 +8,8 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
-    new Recipe('A Test Recipe', 'A test', 'https://hips.hearstapps.com/del.h-cdn.co/assets/16/04/1453913826-delish-creamy-spaghetti-3.jpg?crop=1.0xw:1xh;center,top&resize=480:*')
+    new Recipe('A Test Recipe', 'A test', 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/beetroot_halloumi_salad-e828cae.jpg?quality=90&resize=500%2C454'),
+    new Recipe('A Test Recipe', 'A test', 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/beetroot_halloumi_salad-e828cae.jpg?quality=90&resize=500%2C454')
   ];
 
   constructor() { }
