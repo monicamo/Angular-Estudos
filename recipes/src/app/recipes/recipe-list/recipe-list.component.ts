@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Recipe } from '../recipe.model';
 
 @Component({
@@ -7,14 +7,25 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
+  @Output() recipeWasSelected = new EventEmitter<Recipe>();
+
   recipes: Recipe[] = [
-    new Recipe('A Test Recipe', 'A test', 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/beetroot_halloumi_salad-e828cae.jpg?quality=90&resize=500%2C454'),
-    new Recipe('A Test Recipe', 'A test', 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/beetroot_halloumi_salad-e828cae.jpg?quality=90&resize=500%2C454')
+    new Recipe(
+      'Classic Beef Stroganoff',
+      'With its tender chunks of beef coated in a luscious creamy sauce',
+      'https://images-gmi-pmc.edge-generalmills.com/e8b4f392-d17e-45dc-b142-1effc9a52db5.jpg'),
+    new Recipe('Classic Chicken Parmesan',
+        'A Melted cheese, crispy chicken and tomato sauce',
+        'https://images-gmi-pmc.edge-generalmills.com/100d0ed3-cceb-469f-a9a6-8313552d0024.jpg')
   ];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onRecipeSelected(recipe: Recipe) {
+    this.recipeWasSelected.emit(recipe);
   }
 
 }
